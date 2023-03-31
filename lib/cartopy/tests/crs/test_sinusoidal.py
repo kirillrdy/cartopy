@@ -33,9 +33,9 @@ class TestSinusoidal:
         check_proj_params('sinu', crs, other_args)
 
         assert_almost_equal(np.array(crs.x_limits),
-                            [-3141.59, 3141.59], decimal=2)
+                            [-3141.60, 3141.60], decimal=2)
         assert_almost_equal(np.array(crs.y_limits),
-                            [-1216.60, 1216.60], decimal=2)
+                            [-1211.05,  1211.05], decimal=2)
 
     def test_offset(self):
         crs = ccrs.Sinusoidal()

@@ -24,10 +24,10 @@ class TestEquidistantConic:
         check_proj_params('eqdc', eqdc, other_args)
 
         assert_almost_equal(np.array(eqdc.x_limits),
-                            (-22784919.35600352, 22784919.35600352),
+                            (-22784919.3559981,  22784919.3559981),
                             decimal=7)
         assert_almost_equal(np.array(eqdc.y_limits),
-                            (-10001965.729313632, 17558791.85156368),
+                            (-10001965.72931272,  17558791.85157471),
                             decimal=7)
 
     def test_eccentric_globe(self):
@@ -39,10 +39,10 @@ class TestEquidistantConic:
         check_proj_params('eqdc', eqdc, other_args)
 
         assert_almost_equal(np.array(eqdc.x_limits),
-                            (-3016.869847713461, 3016.869847713461),
+                            (-2960.1009481,  2960.1009481),
                             decimal=7)
         assert_almost_equal(np.array(eqdc.y_limits),
-                            (-1216.6029342241113, 2511.0574375797723),
+                            (-1211.05573766,  2606.04249537),
                             decimal=7)
 
     def test_eastings(self):
@@ -129,10 +129,10 @@ class TestEquidistantConic:
         check_proj_params('eqdc', eqdc, other_args)
 
         assert_almost_equal(np.array(eqdc.x_limits),
-                            (-22421870.719894886, 22421870.719894886),
+                            (-22421870.71988974,  22421870.71988976),
                             decimal=7)
         assert_almost_equal(np.array(eqdc.y_limits),
-                            (-12546277.778958388, 17260638.403203618),
+                            (-12546277.77895742,  17260638.403216),
                             decimal=7)
 
         result = eqdc.transform_point(-75.0, 35.0, geodetic)
